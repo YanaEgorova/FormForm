@@ -18,7 +18,7 @@ function submitFormData() {
   // document.location.href = "mailto:chrisgreg23@googlemail.com?subject="
   //     + encodeURIComponent(subject)
   //     + "&body=" + encodeURIComponent(yourMessage);
-  console.log(`mailto:${inputEmail.value}?subject=${encodeURIComponent(inputName.value)}&body=${encodeURIComponent(inputMessage.value)}`);
-  // document.location.href = `mailto:${inputEmail.value}?subject=${encodeURIComponent(inputName.value)}&body=${encodeURIComponent(inputMessage.value)}`;
+  console.log(`mailto:${inputEmail.value}?subject=${inputName.value}&body=${inputMessage.value}`);
+  document.location.href = `mailto:${inputEmail.value}?subject=${inputName.value}&body=${inputMessage.value}`;
 
 }
