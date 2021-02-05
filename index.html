@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" name="testform" onSubmit="return mailMe(this.form)">
+      Subject of message:
+      <br />
+      <input
+        type="text"
+        name="inputbox1"
+        value="This is such a great form!"
+        class="Subject"
+      />
+      <p>
+        Send cc to:
+        <br />
+        <input type="text" name="inputbox2" value="" class="Send-cc" />
+      </p>
+      Send blind cc to:
+      <br />
+      <input type="text" name="inputbox3" class="Send-blind-cc" />
+      <input type="submit" value="Submit" class="submit" />
+    </form>
+    <script>
+      const submitBtn = document.querySelector('.submit');
+      const form = document.querySelector('form');
+      let Subject;
+      let CC;
+      let BCC;
+      function mailMe(form) {
+        Subject = document.querySelector('.Subject').value;
+        console.log(Subject);
+        CC = document.querySelector('.Send-cc').value;
+        console.log(CC);
+        BCC = document.querySelector('.Send-blind-cc').value;
+        console.log(BCC);
+        location =
+          'mailto:yanaegorova69.3@gmail.com?subject=' +
+          Subject +
+          '&Bcc=' +
+          BCC +
+          '&cc=' +
+          CC;
+        return true;
+      }
+      // submitBtn.addEventListener('click', mailMe(form))
+    </script>
+  </body>
+</html>
