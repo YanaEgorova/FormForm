@@ -20,7 +20,7 @@ function submitFormData() {
   //     + encodeURIComponent(subject)
   //     + "&body=" + encodeURIComponent(yourMessage);
   console.log(`mailto:${inputEmail.value}?subject=${inputName.value}&body=${inputMessage.value}`);
-  document.location.href = `mailto:${inputEmail.value}?subject=${inputName.value}&body=${inputMessage.value}`;
+//  document.location.href = `mailto:${inputEmail.value}?subject=${inputName.value}&body=${inputMessage.value}`;
   result = `mailto:${inputEmail.value}?subject=${inputName.value}&body=${inputMessage.value}`;
 
 }
