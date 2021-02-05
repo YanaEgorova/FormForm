@@ -13,6 +13,7 @@ formBtn.addEventListener('click', submitFormData);
 //   form.setAttribute('action', `mailto:${inputEmail.value}`);
 // }
 
+let result;
 
 function submitFormData() {
   // document.location.href = "mailto:chrisgreg23@googlemail.com?subject="
@@ -20,5 +21,8 @@ function submitFormData() {
   //     + "&body=" + encodeURIComponent(yourMessage);
   console.log(`mailto:${inputEmail.value}?subject=${inputName.value}&body=${inputMessage.value}`);
   document.location.href = `mailto:${inputEmail.value}?subject=${inputName.value}&body=${inputMessage.value}`;
+  result = `mailto:${inputEmail.value}?subject=${inputName.value}&body=${inputMessage.value}`;
 
 }
+
+console.log(result);
