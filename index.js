@@ -10,4 +10,7 @@ function submitFormData() {
   console.log(inputName.value);
   console.log(inputEmail.value);
   console.log(inputMessage.value);
+  form.setAttribute('action', `mailto:${inputEmail.value}`);
 }
+
+// mailto:me@mydomain.com
