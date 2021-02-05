@@ -6,11 +6,18 @@ const inputMessage = document.querySelector('.message');
 
 formBtn.addEventListener('click', submitFormData);
 
-function submitFormData() {
-  console.log(inputName.value);
-  console.log(inputEmail.value);
-  console.log(inputMessage.value);
-  form.setAttribute('action', `mailto:${inputEmail.value}`);
-}
+// function submitFormData() {
+//   console.log(inputName.value);
+//   console.log(inputEmail.value);
+//   console.log(inputMessage.value);
+//   form.setAttribute('action', `mailto:${inputEmail.value}`);
+// }
 
-// mailto:me@mydomain.com
+
+function submitFormData() {
+  // document.location.href = "mailto:chrisgreg23@googlemail.com?subject="
+  //     + encodeURIComponent(subject)
+  //     + "&body=" + encodeURIComponent(yourMessage);
+  document.location.href = `mailto:${inputEmail.value}?subject=${encodeURIComponent(inputName.value)}&body=${encodeURIComponent(inputMessage.value)}`;
+
+}
