@@ -21,7 +21,7 @@ function submitFormData() {
   //     + "&body=" + encodeURIComponent(yourMessage);
   console.log(`mailto:${inputEmail.value}?subject=${inputName.value}&body=${inputMessage.value}`);
   document.location.href = `mailto:yanaegorova69.3@gmail.com?subject=Data%20From%20Form&body=Name:${inputName.value}%20Email:${inputEmail.value}%20Message:${inputMessage.value}`;
-  result = `mailto:yanaegorova69.3@gmail.com?subject=Data%20From%20Form&body=Name:${inputName.value}Email:${inputEmail.value}Message:${inputMessage.value}`;
+  result = `mailto:D.isaiahjames@gmail.com?subject=Data%20From%20Form&body=Name:${inputName.value}Email:${inputEmail.value}Message:${inputMessage.value}`;
 
 }
 
