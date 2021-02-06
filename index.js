@@ -20,9 +20,9 @@ function submitFormData() {
   //     + encodeURIComponent(subject)
   //     + "&body=" + encodeURIComponent(yourMessage);
   console.log(`mailto:${inputEmail.value}?subject=${inputName.value}&body=${inputMessage.value}`);
-  document.location.href = `mailto:yanaegorova69.3@gmail.com?subject=DataFromForm&body=Name:${inputName.value}Email:${inputEmail.value}Message:${inputMessage.value}`;
-  result = `mailto:yanaegorova69.3@gmail.com?subject=Data From Form&body=Name:${inputName.value}Email:${inputEmail.value}Message:${inputMessage.value}`;
+  document.location.href = `mailto:yanaegorova69.3@gmail.com?subject=Data%20From%20Form&body=Name:${inputName.value}%20Email:${inputEmail.value}%20Message:${inputMessage.value}`;
+  result = `mailto:yanaegorova69.3@gmail.com?subject=Data%20From%20Form&body=Name:${inputName.value}Email:${inputEmail.value}Message:${inputMessage.value}`;
 
 }
 
-console.log(result);
+console.log('D.isaiahjames@gmail.com');
