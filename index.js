@@ -20,7 +20,7 @@ function submitFormData() {
   //     + encodeURIComponent(subject)
   //     + "&body=" + encodeURIComponent(yourMessage);
   console.log(`mailto:${inputEmail.value}?subject=${inputName.value}&body=${inputMessage.value}`);
-  document.location.href = `mailto:yanaegorova69.3@gmail.com?subject=Data From Form&body=Name:${inputName.value}Email:${inputEmail.value}Message:${inputMessage.value}`;
+  document.location.href = `mailto:${inputEmail.value}?subject=DataFromForm&body=Name:${inputName.value}Email:${inputEmail.value}Message:${inputMessage.value}`;
   result = `mailto:yanaegorova69.3@gmail.com?subject=Data From Form&body=Name:${inputName.value}Email:${inputEmail.value}Message:${inputMessage.value}`;
 
 }
